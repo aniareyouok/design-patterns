@@ -1,2 +1,6 @@
-package exercises.chainOfResponsibility;public class CarFinder {
+package exercises.chainOfResponsibility;
+
+public interface CarFinder {
+    void setNext(CarFinder finder);
+    Car find(String licensePlate);
 }
